@@ -15,13 +15,14 @@ a{
 }
 .container{
     max-width: 1320px;
-    width: 100%;
+    width: 92%;
     margin: 0 auto;
 }
 /* hero section css  */
 .hero_section{
     padding: 50px 0;
     overflow: hidden;
+    transition: 0.5s;
 }
 .hero_content{
     padding: 0 80px;
@@ -30,6 +31,7 @@ a{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    overflow: hidden;
 }
 .hero_left_content{
     flex: 0 0 49%;
@@ -53,12 +55,11 @@ a{
     margin: 30px 0;
     max-width: 506px;
     width: 100%;
+   
 }
 .hero_left_content a{
     width: 187px;
     height: 56px;
-    left: 246px;
-    top: 529px;
     background: #DD0000;
     border-radius: 5px;
     display: flex;
@@ -69,9 +70,37 @@ a{
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 .hero_left_content a i{
     margin-left: 10px;
+}
+.hero_left_content a::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(72, 8, 8, 0.5);
+	left: -100%;
+	top: 0;
+	z-index: -1;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+.hero_section:hover .hero_right_img img {
+    transform: scale(1.030);
+    -webkit-transform: scale(1.030);
+    -moz-transform: scale(1.030);
+    -ms-transform: scale(1.030);
+    -o-transform: scale(1.030);
+}
+.hero_left_content a:hover::before {
+    left: 0;
 }
 .hero_right_img{
     flex: 0 0 50%;
@@ -82,6 +111,7 @@ a{
 }
 .hero_right_img img{
     width: 100%;
+    transition: 0.8s;
 }
 /* End hero section css  */
 
@@ -144,7 +174,7 @@ a{
     border: 1px solid #E8E8E8;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 17px;
 }
 .img img{
     width: 100%;
@@ -185,7 +215,7 @@ a{
 .single_timing{
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 28px;
 }
 .single_timing:last-child{
     margin-right: 0;
@@ -233,6 +263,7 @@ a{
 }
 .footer_menu ul {
     margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -277,4 +308,86 @@ a{
 .social ul li:hover a{
     color: #FFF;
 }
+.view_btn{
+    margin-top: 30px;
+    display: none;
+}
+.view_btn a{
+    width: 131px;
+    height: 47px;
+    background: #DD0000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.view_btn a:hover{
+    opacity: 0.8;
+}
 /* End Footer css  */
+
+/* Match page css  */
+.match_items{
+}
+.single_2{
+    padding: 53px 30px;
+    box-sizing: border-box;
+}
+.teams {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.teams img {
+	height: 54px;
+}
+.teams span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #161616;
+    padding: 0 23px;
+}
+.match_items h3{
+    text-align: center;
+}
+.match_items p{
+    text-align: center;
+}
+.single_blog h3{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #161616;
+    margin-top: 20px;
+
+}
+.single_2 p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #4D4D4D;
+	padding-bottom: 0 !important;
+}
+.single_2 {
+	padding: 53px 30px;
+}
+/* End Match page css */
