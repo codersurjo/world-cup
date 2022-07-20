@@ -84,3 +84,197 @@ a{
     width: 100%;
 }
 /* End hero section css  */
+
+/* Blog area design  */
+.blog_area_design {
+	padding: 50px 0;
+	overflow: hidden;
+	padding-bottom: 80px;
+}
+.blog_section{
+    width: 100%;
+}
+.blog_menu{
+    width: 281px;
+    background: #161616;
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+}
+.blog_menu ul{
+    margin: 0;
+    padding: 0;
+}
+.blog_menu ul li{
+}
+.blog_menu ul li a{
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #161616;
+    padding: 17px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.blog_menu ul li:last-child a{
+    margin-bottom: 0;
+}
+.blog_menu ul li:hover a{
+
+}
+.active_blog{
+    background: #DD0000 !important;
+    color: #FFF !important;
+}
+.blog_items_area {
+	margin-left: 360px;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+.single_blog {
+	flex: 0 0 32%;
+	max-width: 32%;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.img img{
+    width: 100%;
+}
+.middle{
+    padding: 20px;
+}
+.single_blog button{
+    width: 100px;
+    height: 32px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #161616;
+    background: transparent;
+    cursor: pointer;
+}
+.single_blog p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+    padding: 15px 0;
+
+}
+.timing{
+    display: flex;
+}
+.single_timing{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.single_timing:last-child{
+    margin-right: 0;
+}
+.single_timing img{
+    width: 24px;
+    margin-right: 10px;
+}
+.single_timing span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(22, 22, 22, 0.7);
+
+}
+/* End Blog area design  */
+
+/* Footer css  */
+.footer_area_design{  
+    background: #161616;
+    padding: 130px 0;
+    text-align: center;
+}
+.footer_content{
+}
+.footer_content h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.border {
+	height: 2px;
+	background: rgb(255, 255, 255,0.1);
+	overflow: hidden;
+	width: 100%;
+	margin: 30px 0;
+}
+.footer_menu{
+}
+.footer_menu ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer_menu ul li{
+}
+.footer_menu ul li a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B9B9B9;
+    padding: 0 25px;
+    transition: 0.2s;
+}
+.footer_menu ul li:hover a{
+    color: #FFF;
+}
+.social{
+    margin-top: 35px;
+}
+.social ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.social ul li{
+   margin: 0 10px;
+}
+.social ul li a {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #B9B9B9;
+	border: 1px solid #B9B9B9;
+    transition: 0.2s;
+}
+.social ul li:hover a{
+    color: #FFF;
+}
+/* End Footer css  */
